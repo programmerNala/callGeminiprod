@@ -1,0 +1,11 @@
+frontend:
+    path: .
+    publish: build
+    scripts:
+        deploy:
+            - npm install --legacy-peer-deps
+            - npm run build
+    subdomain: callGemini
+name: callGemini
+region: eu-central-1
+yamlVersion: 2
